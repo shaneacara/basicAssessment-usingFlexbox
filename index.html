@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cara's Coffee</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav class = "navtop">
+		<ul class = "navcontainer">
+			<li class="nav"><a href ="">Shop</a></li>
+			<li class="nav"><a href ="">Our Story</a></li>
+			<li class="nav"><a href ="">Contact Us</a></li>
+			<li id="myBtn" class="nav trigger navright"><img src="images/cart.png"></li>
+		</ul>
+	</nav>
+
+	<div class="imageheader">
+		<img src="images/header.jpg" alt="header">
+	</div>
+
+	<div class="centerItem">
+		<h2>Coffee Beans</h2>
+		<hr class="hrline">
+	</div>
+	<div class="divProdContainer">
+		<div class="flexprodContainer" id="list">
+			<!-- List of Products -->
+		</div>
+		</div>
+
+	<!-- MODAL -->
+	<div id="myModal" class="modal">
+  		<div class="modalContent">
+    		<span class="close">&times;</span>
+    			<p><h3>Your Cart</h3>
+    				<div class="cart-items"></div>
+    				<div class="centerItem">
+    					<button class="buttonAddToCart buttonRadius addToCart">Check Out</button>
+    				</div>
+    			</p>
+    	</div>
+	</div>
+
+	<footer class="footerContainer">
+		<ul>
+			<li class="footer"><h3>Help</h3></li>
+			<li class="footer"><a href="">FAQ</a></li>
+			<li class="footer"><a href="">Store Policy</a></li>
+			<li class="footer"><a href="">Contact</a></li>
+		</ul>
+		<ul>
+			<div class="spacefooter"></div>
+		</ul>
+		<ul>
+			<li class="footer"><h3>Stay Connected</h3></li>
+			<li class="footer"><a href=""><img src="images/fb.png"></a></li>
+			<li class="footer"><a href=""><img src="images/twitter.png"></a></li>
+		</ul>
+	</footer>
+	
+	<script src="script.js"></script>
+</body>
+</html>

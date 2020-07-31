@@ -1,0 +1,256 @@
+body {
+    margin: auto 0;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+ 	text-decoration: none;
+ }
+
+ .hrline {
+  border: 2px solid #D69C4E; /*yellow*/
+  width: 2%;
+  border-radius: 50px;
+
+}
+
+.centerItem{
+	text-align: center;
+	padding: 0px 0px 20px 0px;
+}
+
+/*NAV BAR LINKS*/
+ li a {
+ 	color: white;
+ 	font-family: 'Ubuntu', sans-serif;
+ 	font-size: 0.9em;
+ 	font-weight: bolder;
+ }
+
+ li > img {
+ 	height: 20px;
+ }
+
+ li > img:hover {
+ 	cursor: pointer;
+ }
+
+
+a:hover {
+	color: #A58840;
+}
+
+/*NAV BAR CONTAINER*/
+.navcontainer {
+	display: flex;
+	list-style: none; 
+	margin: 0;
+	background-color: rgba(130, 101, 29,0.5);
+}
+
+.navtop {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+
+.nav {
+	padding: 16px 50px 16px 70px;
+}
+
+.navright {
+	margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+/*	.navcontainer {
+		padding: 0px;
+	}
+*/
+	.nav {
+		padding: 10px;
+	}
+}
+
+/*HEADER*/
+.imageheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding: 0px 0px 20px 0px;*/file:///C:/Users/Shane/Desktop/basic-assessment-Carandang,%20Shane/images/p3.jpg
+}
+
+
+.imageheader img {
+	width: 100%
+}
+
+/*PRODUCT*/
+.flexprodContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+	margin: auto;
+}
+
+.prodContainer {
+	width: 250px;
+	padding: 0px 30px 20px 30px;
+}
+
+.prodContainer img{
+	width: 250px;
+	border-radius: 20px;
+}
+
+.name{
+	font-size: 1em;
+	font-weight: bold;
+	padding: 5px 0px 3px 0px;
+}
+
+.origin {
+	padding: 0px 0px 5px 0px;
+	font-size: 0.9em;
+}
+
+.description {
+	font-size: 0.8em;
+	padding: 0px 0px 5px 0px;
+}
+
+.price {
+	color: #D4AE4D;
+	font-weight: bold;
+}
+
+.buttonAddToCart {
+  background-color: #D69C4E; /*yellow*/
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 20px;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  outline: none;
+}
+
+.buttonRadius {
+	border-radius: 30px;
+}
+
+/*MODAL CART*/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; /*Sit on top*/
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: 20px;
+  width: 50%; 
+  max-height: 500px;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  border-radius: 0.5rem;
+}
+
+.btnRemove {
+	font-size: 1em;
+	background-color: #E94639; 
+	border: none;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.8rem;
+	margin: 0px;
+	cursor: pointer;
+	font-family: "Ubuntu", sans-serif;
+	outline: none;
+}
+
+/*MODAL CLOSE BUTTON*/
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #D69C4E;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/*MODAL CART ADD ROW*/
+.cartRow {
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	width: 500px;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+.cartTitleDescPrice {
+	font-size: 0.7em;
+	color: #D69C4E; /*yellow*/
+}
+
+.cartItemImg {
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+
+/*Footer*/
+.footerContainer {
+	display: flex;
+	height: 300px;
+	background-color: rgba(130, 101, 29,0.5);
+	justify-content: center;
+	list-style: none;
+	width: 100%;
+}
+
+.footerContainer ul {
+	list-style: none;
+
+}
+
+.footer {
+	padding: 16px 50px 16px 0px;
+	color: white;
+}
+
+
+.footer img {
+	height: 30px;
+	padding: 0px 0px 0px 50px;
+}
+
+.spacefooter {
+	width: 100px;
+}
